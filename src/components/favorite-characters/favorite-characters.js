@@ -34,7 +34,7 @@ class FavoriteCharacters extends LitElement {
             : html`
                 <div>
                 ${this.listFavorites.map(item => html`
-                <character-card .character="${item}" @favorite-sent="${this._handleFavoriteSent}"></character-card>
+                <character-card .character="${item}" @favorite-sent="${this._handleFavoriteSent}" .isFavorite="${true}"></character-card>
             `)}
                 </div>
         `}
